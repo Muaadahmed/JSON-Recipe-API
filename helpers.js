@@ -7,4 +7,8 @@ const recipeDetailsFormat = function(data) {
   }
 }
 
-module.exports = {recipeDetailsFormat};
+const recipeNameList = function(data) {
+  return data.recipes.map(recipe => recipe.name);
+};
+
+module.exports = {recipeDetailsFormat, recipeNameList};
